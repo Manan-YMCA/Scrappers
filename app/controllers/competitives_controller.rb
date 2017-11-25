@@ -29,18 +29,17 @@ class CompetitivesController < ApplicationController
 				multiplier*=10
 			end
 
-			@jsondata['codechef']=Hash.new
-			@jsondata['codechef']['handle']=@codechefuser
-			@jsondata['codechef']['problemssolved']=problemssolved
+			@jsondata=Hash.new
+			@jsondata['handle']=@codechefuser
+			@jsondata['problemssolved']=problemssolved
 		
 		else
-			@jsondata['codechef']=Hash.new
-			@jsondata['codechef']['data']=@data
-			@jsondata['codechef']['error']="Codechef user does not exist"	
+			@jsondata=Hash.new
+			@jsondata['data']=@data
+			@jsondata['error']="Codechef user does not exist"	
 		end	
 		rescue => e 
 			@jsondata=Hash.new
-			@jsondata['handle']=@codechefuser
 			@jsondata['error'] = 'User does not exist'
         end
 	 	render :json=>@jsondata.to_json
@@ -86,7 +85,7 @@ class CompetitivesController < ApplicationController
 			end
 		rescue => e 
 			@jsondata=Hash.new
-			@jsondata['error']="Hackerearth user does not exist"	
+			@jsondata['error']="User does not exist"	
 		end	
 
 		render :json=>@jsondata.to_json
@@ -125,12 +124,12 @@ class CompetitivesController < ApplicationController
 				multiplier*=10
 			end
 
-			@jsondata['spoj']=Hash.new
-			@jsondata['spoj']['handle']=@username
-			@jsondata['spoj']['problemssolved']=problemssolved
+			@jsondata=Hash.new
+			@jsondata['handle']=@username
+			@jsondata['problemssolved']=problemssolved
 		else
-			@jsondata['spoj']=Hash.new
-			@jsondata['spoj']['error']="Spoj user does not exist"	
+			@jsondata=Hash.new
+			@jsondata['error']="User does not exist"	
 		end	
 			render :json=>@jsondata.to_json
 	end
