@@ -7,8 +7,13 @@ end
 
 # Use sqlite3 as the database for Active Record
 #group :production, :staging do
- gem "pg"
-  
+group :production, :staging do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "sqlite3"
+end
 gem 'rest-client'
 gem 'rack-cors'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
