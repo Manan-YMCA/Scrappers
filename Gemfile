@@ -7,12 +7,8 @@ end
 
 # Use sqlite3 as the database for Active Record
 #group :production, :staging do
-group :production, :staging do
-  gem "pg"
-end
-
-group :development, :test do
-  gem "sqlite3"
+group :production do
+ gem 'pg', '~> 0.20'
 end
 gem 'rest-client'
 gem 'rack-cors'
