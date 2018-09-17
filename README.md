@@ -1,24 +1,36 @@
-# README
+# REST API to get the number of problem solved by user on Hackerearth, SPOJ and Codechef. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Hackerearth : https://manan-scrappers.herokuapp.com/competitive/hackerearth/?user=user_name
+* SPOJ : https://manan-scrappers.herokuapp.com/competitive/spoj/?user=user_name
+* Codechef : https://manan-scrappers.herokuapp.com/competitive/codechef/?user=user_name
 
-Things you may want to cover:
+# Tech Stack 
 
-* Ruby version
+* Backend: Ruby On Rails
+* Databse: Postgres - SQL Database service
+* Backend Hosting: Heroku
+* Other Libraries: REST Client
 
-* System dependencies
 
-* Configuration
+### Hosting Server
 
-* Database creation
+* Production Server : [manan-scrappers.herokuapp.com](https://manan-scrappers.herokuapp.com)
 
-* Database initialization
+### Wanna Contribute? Wanna know how to install this API on your computer? 
 
-* How to run the test suite
+### Installation
+This project requires Ruby On Rails to run.
 
-* Services (job queues, cache servers, search engines, etc.)
+Clone this repo, install the dependencies and start the server.
 
-* Deployment instructions
+```sh
+$ bundle install
+$ rails s
+```
 
-* ...
+### Report Bugs / Suggest new features
+To report bug or suggest a new feature, raise an issue at [Issues](https://github.com/Manan-YMCA/Scrappers/)
+
+# License
+
+MIT
