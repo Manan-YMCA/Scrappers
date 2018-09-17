@@ -29,7 +29,7 @@ $ rails s
 ```
 
 ### Report Bugs / Suggest new features
-To report bug or suggest a new feature, raise an issue at [Issues](https://github.com/Manan-YMCA/Scrappers/)
+To report bug or suggest a new feature, raise an issue at [Issues](https://github.com/Manan-YMCA/Scrappers/issues)
 
 # License
 
